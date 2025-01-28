@@ -10,15 +10,23 @@ def game_core_v3(number: int = 1) -> int:
     """
     # Ваш код начинается здесь
 
-    count = 0
+    count = 1
     predict = np.random.randint(1, 101)
 
-    if number > 75:
-        predict = 76
+    if number > 85:
+        predict = 86
+    elif number > 70:
+        predict = 71
+    elif number > 65:
+        predict = 66
     elif number > 50:
-        predict = 76
-    elif number > 25:
-        predict = 25
+        predict = 51       
+    elif number > 35:
+        predict = 36     
+    elif number > 20:
+        predict = 21 
+    elif number > 5:
+        predict = 6
     else:
         predict = 1
 
